@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <pthread.h>
 #include <stdlib.h>
 #include "ltr_srv_comm.h"
 #include "ltr_srv_master.h"
