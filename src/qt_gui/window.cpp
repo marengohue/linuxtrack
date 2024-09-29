@@ -1,4 +1,4 @@
-#include <QtWidget>
+#include <QWidget>
 #include <QTabWidget>
 
  #include "glwidget.h"

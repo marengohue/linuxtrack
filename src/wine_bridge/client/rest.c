@@ -213,10 +213,11 @@ bool runFile(const char *file)
   si.dwFlags = STARTF_USESHOWWINDOW;
   si.wShowWindow = SW_HIDE;
   ZeroMemory(&pi, sizeof(pi));
-printf("Going to run this: %s\n", q_exe);
+  printf("Going to run this: %s\n", q_exe);
   bool res = CreateProcess(NULL, q_exe, NULL, NULL, false, NORMAL_PRIORITY_CLASS, NULL, NULL, &si, &pi);
   if(!res){
-    printf("Failed! (%d)\n", GetLastError());
+    long unsigned int err = GetLastError();
+    printf("Failed! (%lu)\n", err);
   }
   CloseHandle(pi.hProcess);
   CloseHandle(pi.hThread);

@@ -57,7 +57,6 @@
 #include <QTemporaryFile>
 #include <QTextBrowser>
 #include <QTextStream>
-#include <QtWidget>
 #include <QAction>
 #include <QApplication>
 #include <QButtonGroup>
@@ -81,7 +80,6 @@
 #include <QSpinBox>
 #include <QTabWidget>
 #include <QVBoxLayout>
-#include <QWidget>
 #include <QThread>
 #include <QThread>
 #include <QTime>
